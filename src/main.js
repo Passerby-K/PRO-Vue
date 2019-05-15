@@ -3,14 +3,18 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import fastclick from 'fastclick'  // 引入一个解决移动端300毫秒的延迟
+import fastClick from 'fastclick'  // 引入一个解决移动端300毫秒的延迟
 import "@/assets/style/reset.css"   // 通用样式
 import "@/assets/style/border.css"  // 解决移动端1px 像素的问题
-import "@/assets/style/iconfont/iconfont.css"
+import "@/assets/style/iconfont/iconfont.css"  //图标字体
+import VueAwesomeSwiper from 'vue-awesome-swiper' //swiper
+import 'swiper/dist/css/swiper.css'   //swiper.css
+
 
 
 Vue.config.productionTip = false
-fastclick.attach(document.body)
+fastClick.attach(document.body)
+Vue.use(VueAwesomeSwiper, /* { default global options } */)  //调用
 
 /* eslint-disable no-new */
 new Vue({
