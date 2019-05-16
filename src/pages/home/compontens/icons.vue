@@ -93,11 +93,12 @@ export default {
 <style lang="stylus" scoped>
 @import "../../../assets/style/overall.styl";
 @import "../../../assets/style/mixin.styl";
-        .icons >>> .swiper-container
-            height 0
-            padding-bottom 50%
-            // overflow hidden
-    // .icons  
+    .icons >>> .swiper-container
+        height 0
+        padding-bottom 50%
+        // overflow hidden
+    .icons 
+        margin-top .2rem    
     //     width 100%
     //     height 0
     //     padding-bottom 50%
