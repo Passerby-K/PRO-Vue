@@ -4,6 +4,7 @@
         <home-swiper></home-swiper>
         <home-icons></home-icons>
         <home-recommend></home-recommend>
+        <home-week></home-week>
     </div>
 </template>
 
@@ -12,6 +13,7 @@ import HomeHead from "./compontens/head"
 import HomeSwiper from "./compontens/swiper"
 import HomeIcons from "./compontens/icons"
 import HomeRecommend from "./compontens/recommend"
+import HomeWeek from "./compontens/week"
 
 export default {
     name:"Home",
@@ -19,7 +21,8 @@ export default {
         HomeHead,
         HomeSwiper,
         HomeIcons,
-        HomeRecommend
+        HomeRecommend,
+        HomeWeek
     }
     
 }
