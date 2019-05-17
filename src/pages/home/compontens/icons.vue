@@ -4,9 +4,9 @@
            <swiper-slide v-for="(page,index) of pages" :key="index">
                 <div class="item"  v-for="item of page" :key="item.id">
                     <div class="item-img">
-                        <img :src="item.img" alt="">
+                        <img :src="item.imgUrl" alt="">
                     </div>
-                        <p>{{item.title}}</p>
+                        <p>{{item.desc}}</p>
                 </div>
             </swiper-slide>
        </swiper>
@@ -17,55 +17,58 @@
 <script>
 export default {
     name:"HomeIcons",
+    props:{
+        list:Array
+    },
     data () {
         return{
-            list:[
-                {
-                    id:"1",
-                    title:"景点",
-                    img:require("../../../assets/img/i-1.png")
-                },
-                {
-                    id:"2",
-                    title:"一日游",
-                    img:require("../../../assets/img/i-2.png")
-                },
-                {
-                    id:"3",
-                    title:"上海",
-                    img:require("../../../assets/img/i-3.png")
-                },
-                {
-                    id:"4",
-                    title:"娱乐",
-                    img:require("../../../assets/img/i-4.png")
-                },
-                {
-                    id:"5",
-                    title:"植物园",
-                    img:require("../../../assets/img/i-5.png")
-                },
-                {
-                    id:"6",
-                    title:"公园",
-                    img:require("../../../assets/img/i-6.png")
-                },
-                {
-                    id:"7",
-                    title:"野马",
-                    img:require("../../../assets/img/i-7.png")
-                },
-                {
-                    id:"8",
-                    title:"野生",
-                    img:require("../../../assets/img/i-7.png")
-                },
-                {
-                    id:"9",
-                    title:"野生",
-                    img:require("../../../assets/img/i-7.png")
-                },
-            ],
+            // list:[
+            //     {
+            //         id:"1",
+            //         title:"景点",
+            //         img:require("../../../assets/img/i-1.png")
+            //     },
+            //     {
+            //         id:"2",
+            //         title:"一日游",
+            //         img:require("../../../assets/img/i-2.png")
+            //     },
+            //     {
+            //         id:"3",
+            //         title:"上海",
+            //         img:require("../../../assets/img/i-3.png")
+            //     },
+            //     {
+            //         id:"4",
+            //         title:"娱乐",
+            //         img:require("../../../assets/img/i-4.png")
+            //     },
+            //     {
+            //         id:"5",
+            //         title:"植物园",
+            //         img:require("../../../assets/img/i-5.png")
+            //     },
+            //     {
+            //         id:"6",
+            //         title:"公园",
+            //         img:require("../../../assets/img/i-6.png")
+            //     },
+            //     {
+            //         id:"7",
+            //         title:"野马",
+            //         img:require("../../../assets/img/i-7.png")
+            //     },
+            //     {
+            //         id:"8",
+            //         title:"野生",
+            //         img:require("../../../assets/img/i-7.png")
+            //     },
+            //     {
+            //         id:"9",
+            //         title:"野生",
+            //         img:require("../../../assets/img/i-7.png")
+            //     },
+            // ],
             swiperOption:{
                 autoplay:false
             },

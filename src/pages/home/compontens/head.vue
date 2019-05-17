@@ -8,7 +8,7 @@
             <input type="text" placeholder="请输入城市景点/游玩主题">
         </div>
         <div class="head-right">
-            <p>城市<span class="iconfont back">&#xe605;</span></p> 
+            <p>{{this.city}}<span class="iconfont back">&#xe605;</span></p> 
             
         </div>
 
@@ -17,7 +17,8 @@
 
 <script>
 export default {
-    name:"Head"
+    name:"Head",
+    props:["city"]
 }
 </script>
 <style lang="stylus" scoped>

@@ -1,9 +1,9 @@
 <template>
     <div class="headd">
-        <swiper :options="swiperOption"  >
+        <swiper :options="swiperOption"  v-if="lister.length">
             <!-- slides -->
-            <swiper-slide v-for="item of swiperList" :key="item.id">
-                <img :src="item.img" alt="">
+            <swiper-slide v-for="item of lister" :key="item.id" >
+                <img :src="item.imgUrl" alt="">
             </swiper-slide>
             
             
@@ -21,6 +21,9 @@
 <script>
 export default {
     name:"HomeSwiper",
+    props:{
+        lister:Array
+    },
     data () {
         return{
             swiperOption:{
@@ -29,21 +32,8 @@ export default {
                 speed:300,
                 effect : 'fade',
                 loop:true
-            },
-            swiperList:[
-                {
-                    id:"01",
-                    img:require("../../../assets/img/1.jpg")
-                },
-                {
-                    id:"02",
-                    img:require("../../../assets/img/2.jpg")
-                },
-                {
-                    id:"03",
-                    img:require("../../../assets/img/3.jpg")
-                },
-            ]
+            }
+           
         }
     }
 }

@@ -68,9 +68,7 @@ export default {
 
 <style lang="stylus" scoped>
 @import "../../../assets/style/mixin.styl";
-    .rec
-        margin-top .2rem
-        .title
+        .title 
             line-height .8rem
             background-color #eee
             text-indent .2rem
