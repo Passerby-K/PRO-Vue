@@ -4,13 +4,13 @@
           周末去哪
       </p>
       <ul>
-          <li class="item border-bottom" v-for="item of list" :key="item.id">
+          <li class="item border-bottom" v-for="item of week" :key="item.id">
               <div class="item-img">
-                <img :src="item.img" alt="">
+                <img :src="item.imgUrl" alt="">
               </div>
               <div class="item-info"> 
-                  <p class="one"> {{item.one}}</p>
-                  <p class="two">{{item.two}}</p>
+                  <p class="one"> {{item.title}}</p>
+                  <p class="two">{{item.desc}}</p>
               </div>
           </li>
       </ul>
@@ -20,48 +20,51 @@
 <script>
 export default {
     name:"HomeRecommend",
-    data(){
-        return{
-            list:[
-                {
-                    id:"1",
-                    one:"上海迪士尼乐园",
-                    two:"全球最大的迪士尼城堡",
-                    img:"http://img1.qunarzz.com/sight/source/1505/7d/df6ff468331c43.jpg_r_640x214_1f3783d0.jpg"
-                }, 
-                {
-                    id:"2",
-                    one:"上海野生动物园",
-                    two:"会跳芭蕾的小海狮们~",
-                    img:"http://img1.qunarzz.com/sight/source/1603/ad/69b0fc5f48ad5f.jpg_r_640x214_b0fd5c7b.jpg"
-                }, 
-                {
-                    id:"3",
-                    one:"上海欢乐谷",
-                    two:"敢上1200米长的木质过山车吗？",
-                    img:"http://img1.qunarzz.com/sight/source/1511/1d/fe098e8cfec117.jpg_r_640x214_a9be292a.jpg"
-                }, 
-                {
-                    id:"4",
-                    one:"上海欢乐谷",
-                    two:"敢上1200米长的木质过山车吗？",
-                    img:"http://img1.qunarzz.com/sight/source/1511/1d/fe098e8cfec117.jpg_r_640x214_a9be292a.jpg"
-                }, 
-                {
-                    id:"5",
-                    one:"上海欢乐谷",
-                    two:"敢上1200米长的木质过山车吗？",
-                    img:"http://img1.qunarzz.com/sight/source/1511/1d/fe098e8cfec117.jpg_r_640x214_a9be292a.jpg"
-                }, 
-                {
-                    id:"6",
-                    one:"上海迪士尼乐园",
-                    two:"全球最大的迪士尼城堡",
-                    img:"http://img1.qunarzz.com/sight/source/1511/1d/fe098e8cfec117.jpg_r_640x214_a9be292a.jpg"
-                }, 
-            ]
-        }
+    props:{
+        week:Array
     }
+    // data(){
+    //     return{
+    //         list:[
+    //             {
+    //                 id:"1",
+    //                 one:"上海迪士尼乐园",
+    //                 two:"全球最大的迪士尼城堡",
+    //                 img:"http://img1.qunarzz.com/sight/source/1505/7d/df6ff468331c43.jpg_r_640x214_1f3783d0.jpg"
+    //             }, 
+    //             {
+    //                 id:"2",
+    //                 one:"上海野生动物园",
+    //                 two:"会跳芭蕾的小海狮们~",
+    //                 img:"http://img1.qunarzz.com/sight/source/1603/ad/69b0fc5f48ad5f.jpg_r_640x214_b0fd5c7b.jpg"
+    //             }, 
+    //             {
+    //                 id:"3",
+    //                 one:"上海欢乐谷",
+    //                 two:"敢上1200米长的木质过山车吗？",
+    //                 img:"http://img1.qunarzz.com/sight/source/1511/1d/fe098e8cfec117.jpg_r_640x214_a9be292a.jpg"
+    //             }, 
+    //             {
+    //                 id:"4",
+    //                 one:"上海欢乐谷",
+    //                 two:"敢上1200米长的木质过山车吗？",
+    //                 img:"http://img1.qunarzz.com/sight/source/1511/1d/fe098e8cfec117.jpg_r_640x214_a9be292a.jpg"
+    //             }, 
+    //             {
+    //                 id:"5",
+    //                 one:"上海欢乐谷",
+    //                 two:"敢上1200米长的木质过山车吗？",
+    //                 img:"http://img1.qunarzz.com/sight/source/1511/1d/fe098e8cfec117.jpg_r_640x214_a9be292a.jpg"
+    //             }, 
+    //             {
+    //                 id:"6",
+    //                 one:"上海迪士尼乐园",
+    //                 two:"全球最大的迪士尼城堡",
+    //                 img:"http://img1.qunarzz.com/sight/source/1511/1d/fe098e8cfec117.jpg_r_640x214_a9be292a.jpg"
+    //             }, 
+    //         ]
+    //     }
+    // }
 }
 
 </script>
@@ -75,7 +78,7 @@ export default {
         .item-img 
             overflow hidden
             height 0
-            padding-bottom 33.9%
+            padding-bottom 37.09%
 
         img 
             width 100%

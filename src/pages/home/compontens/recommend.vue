@@ -4,11 +4,11 @@
           本周推荐
       </p>
       <ul>
-          <li class="item border-bottom" v-for="item of list" :key="item.id">
-                <img :src="item.img" alt="">
+          <li class="item border-bottom" v-for="item of reco" :key="item.id">
+                <img :src="item.imgUrl" alt="">
               <div class="item-info"> 
-                  <p class="one"> {{item.one}}</p>
-                  <p class="two">{{item.two}}</p>
+                  <p class="one"> {{item.title}}</p>
+                  <p class="two">{{item.desc}}</p>
                   <button>查看详情</button>
               </div>
           </li>
@@ -19,6 +19,9 @@
 <script>
 export default {
     name:"HomeRecommend",
+    props:{
+        reco:Array
+    },
     data(){
         return{
             list:[
