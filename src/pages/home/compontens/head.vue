@@ -7,10 +7,12 @@
             <span class="iconfont">&#xe6ac;</span>
             <input type="text" placeholder="请输入城市景点/游玩主题">
         </div>
-        <div class="head-right">
-            <p>{{this.city}}<span class="iconfont back">&#xe605;</span></p> 
-            
-        </div>
+        <router-link to="/city">
+            <div class="head-right">
+                <p>{{this.city}}<span class="iconfont back">&#xe605;</span></p> 
+                
+            </div>
+        </router-link>
 
     </div>
 </template>
@@ -60,7 +62,7 @@ export default {
                 border-radius .1rem
 
         .head-right
-            width: 1.24rem
+            width 1.24rem
             color white
             float right
             text-align center
