@@ -9,6 +9,7 @@ import "@/assets/style/border.css"  // 解决移动端1px 像素的问题
 import "@/assets/style/iconfont/iconfont.css"  //图标字体
 import VueAwesomeSwiper from 'vue-awesome-swiper' //swiper
 import 'swiper/dist/css/swiper.css'   //swiper.css
+import store from "./store"
 
 
 
@@ -20,6 +21,7 @@ Vue.use(VueAwesomeSwiper, /* { default global options } */)  //调用
 new Vue({
   el: '#app',
   router:router,
+  store:store,
   components: { App:App },
   template: '<App/>'
 })
