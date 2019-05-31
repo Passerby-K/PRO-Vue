@@ -69,8 +69,7 @@ export default {
     activated(){
         console.log("activeted");
         if(this.lastCity!== this.city){
-            this.lastCity=this.city
-            this.gethomeinfo()
+            
         }
 
         

@@ -15,7 +15,6 @@ import HomeIcons from "./compontens/icons"
 import HomeRecommend from "./compontens/recommend"
 import HomeWeek from "./compontens/week"
 import axios from "axios"
-import {mapState} from "vuex"
 
 export default {
     name:"Home",
@@ -28,7 +27,6 @@ export default {
     },
     data () {
         return{
-            lastCity:'',
             swiperLister:[],
             iconList:[],
             icon:[],
@@ -36,12 +34,9 @@ export default {
             week:[]
         }
     },
-    computed:{
-        ...mapState(["city"])
-    },
     methods:{
         gethomeinfo(){
-            axios.get("/api/index.json?city="+this.city)
+            axios.get("/api/index.json")
                 .then(this.gethomesucc)
         },
         gethomesucc (res){
@@ -61,19 +56,6 @@ export default {
     },
     mounted(){
         this.gethomeinfo()
-        console.log("mounetd");
-        this.lastCity=this.city
-        
-        
-    },
-    activated(){
-        console.log("activeted");
-        if(this.lastCity!== this.city){
-            this.lastCity=this.city
-            this.gethomeinfo()
-        }
-
-        
     }
     
 }

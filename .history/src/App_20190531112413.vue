@@ -1,9 +1,8 @@
 <template>
   <div id="app">
-    <!-- 缓存 -->
-    <keep-alive>
+    <!-- <keep-alive> -->
         <router-view></router-view>
-    </keep-alive>
+    <!-- </keep-alive> -->
   </div>
 </template>
 
