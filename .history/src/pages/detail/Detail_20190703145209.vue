@@ -2,9 +2,6 @@
   <div>
       <detail-banner></detail-banner>
       <detail-header></detail-header>
-      <div class="content">
-
-      </div>
   </div>
 </template>
 
@@ -21,9 +18,6 @@ export default {
 
 </script>
 
-<style lang="stylus" scoped>
-    .content
-        width 100%
-        height 50rem
-        background-color red
+<style>
+
 </style>
