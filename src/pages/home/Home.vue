@@ -62,7 +62,7 @@ export default {
     mounted(){
         this.gethomeinfo()
         console.log("mounetd");
-        this.lastCity=this.city
+        this.lastCity=this.city;
         
         
     },
