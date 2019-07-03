@@ -27,8 +27,7 @@ export default {
     methods:{
         handScroll () {
             //滚动的高度
-            console.log("scroll")
-            // console.log(document.documentElement.scrollTop)
+            console.log(document.documentElement.scrollTop)
             const top=document.documentElement.scrollTop;
             if(top > 100 ){
                 let opacity=top/150
@@ -44,7 +43,6 @@ export default {
     activated(){
         window.addEventListener("scroll",this.handScroll)
     },
-    // 解决在全局受影响
     deactivated(){
         window.removeEventListener("scroll",this.handScroll)
     }

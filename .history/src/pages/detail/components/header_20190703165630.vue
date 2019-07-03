@@ -45,9 +45,9 @@ export default {
         window.addEventListener("scroll",this.handScroll)
     },
     // 解决在全局受影响
-    deactivated(){
-        window.removeEventListener("scroll",this.handScroll)
-    }
+    // deactivated(){
+    //     window.removeEventListener("scroll",this.handScroll)
+    // }
 }
 
 </script>
