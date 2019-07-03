@@ -25,5 +25,5 @@ export default {
     .content
         width 100%
         height 50rem
-        background-color red
+        // background-color red
 </style>
