@@ -79,6 +79,7 @@ export default {
         color #fff
         font-size .32rem
         background $bgcolor
+        z-index 99
         .head-back
             position absolute
             top 0
