@@ -1,7 +1,7 @@
 <template>
   <div>
-      <detail-banner></detail-banner>
-      <detail-header></detail-header>
+      <detail-banner :sightName="sightName" :bannerImg="bannerImg" :gallaryImgs="gallaryImgs"></detail-banner>
+      <detail-header ></detail-header>
       <div class="content">
         <detail-list :list="list"></detail-list>
       </div>
@@ -12,6 +12,7 @@
 import DetailBanner from "./components/banner"
 import DetailHeader from "./components/header"
 import DetailList from "./components/list"
+import axios from "axios"
 export default {
     name:"Detail",
     components:{
@@ -21,42 +22,39 @@ export default {
     },
     data(){
         return{
-            list:[
-                {
-                    title:"成人票",
-                    children:[
-                        {
-                            title:"成人三联票",
-                            children:[
-                                {title:"三级-联票-销售"}
-                            ]
-                        
-                        },
-                        {title:"成人四联票"}
-                    ]
-                
-                },
-                {
-                    title:"学生票",
-                     children:[
-                        {title:"学生三联票"},
-                        {title:"学生学生四联票"}
-                    ]
-                
-                },
-                {
-                    title:"儿童票",
-                    children:[
-                        {title:"儿童三联票"},
-                        {title:"儿童四联票"}
-                    ]
-                },
-                {
-                    title:"特惠票",
-                    
-                },
-            ]
+            sightName:'',
+            bannerImg:"",
+            gallaryImgs:[],
+            list:[]
         }
+    },
+    methods:{
+        getDetailInfo(){
+            // 第一种方法
+            // axios.get("/api/detail.json?id="+this.$route.params.id)
+            // 第二种
+            axios.get("/api/detail.json",{
+                params:{
+                    id:this.$route.params.id
+                }
+            }).then(this.handGetDataSucc)
+        },
+        handGetDataSucc(res){
+            res=res.data
+            console.log(res)
+            if(res.ret&&res.data){
+                const data=res.data
+                console.log(data)
+                this.sightName=data.sightName
+                this.bannerImg=data.bannerImg
+                this.gallaryImgs=data.gallaryImgs
+                this.list=data.categoryList
+
+            }
+        }
+    },
+    mounted(){
+        this.getDetailInfo()
     }
 }
 

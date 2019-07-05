@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
       <router-link to="/" tag="div" class="header-abs" v-show="showAbs">
           <span class="iconfont abs-back">&#xe679;</span>
       </router-link>
@@ -26,7 +26,7 @@ export default {
     },
     methods:{
         handScroll () {
-            //滚动的高度
+        //     //滚动的高度
             console.log("scroll")
             // console.log(document.documentElement.scrollTop)
             const top=document.documentElement.scrollTop;
@@ -41,8 +41,10 @@ export default {
         }
     },
     //事件监听，监听一个滚动事件（scroll）,事件名为handScroll
-    activated(){
+    // activated(){
+    created(){
         window.addEventListener("scroll",this.handScroll)
+        console.log("11")
     },
     // 解决在全局受影响
     deactivated(){
@@ -53,7 +55,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-    @import "../../../assets/style/overall.styl";
+@import "../../../assets/style/overall.styl";
+
     .header-abs
         position absolute
         top .2rem
@@ -79,7 +82,7 @@ export default {
         color #fff
         font-size .32rem
         background $bgcolor
-        z-index 99
+        z-index 999
         .head-back
             position absolute
             top 0

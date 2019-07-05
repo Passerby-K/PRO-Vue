@@ -1,14 +1,14 @@
 <template>
 <div>
   <div class="banner" @click="handclick">
-      <img class="banner-img" src="@/assets/img/11.jpg" alt="">
+      <img class="banner-img" :src="bannerImg" alt="">
       <!-- <img src="@/assets/img/22.jpg" alt=""> -->
         <div class="banner-info">
-            <p class="title">大连圣亚海洋世界（AAA）</p>
-            <p class="number"><span>$39</span> </p>
+            <p class="title">{{this.sightName}}</p>
+            <p class="number"><span>${{this.gallaryImgs.length}}</span> </p>
         </div>
   </div>
-  <gallary :images="images" v-show="showGall" @close="handClose"></gallary>
+  <gallary :img="bannerImg" v-show="showGall" @close="handClose"></gallary>
 </div>
 </template>
 
@@ -16,10 +16,15 @@
 import Gallary from "common/gallary/gallary"
 export default {
     name:"Banner",
+    props:{
+        sightName:String,
+        bannerImg:String,
+        gallaryImgs:Array
+    },
     data () {
         return{
-            showGall:false,
-             images:['//img1.qunarzz.com/sight/p0/1709/87/87e3acc2ee041669a3.img.jpg_600x330_bce4b0f5.jpg','//img1.qunarzz.com/sight/p0/1506/16/f05ab7bbcbdf7b7fdee652843ebba2db.water.jpg_600x330_c9fdfa5d.jpg']
+            showGall:false
+           
         }
     },
     methods:{
