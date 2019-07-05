@@ -2,17 +2,18 @@
   <div class="gallary" @click="handGall">
       <div class="warpper">
           <swiper :options="swiperOption"  >
-            <!-- slides -->
-            <swiper-slide   v-for="(item,index) in images" :key="index">
+            
+            <swiper-slide   v-for="(item,index) in imgs" :key="index">
                 <img :src="item" alt="">
             </swiper-slide>
            
             
-            <!-- Optional controls -->
+           
             <div class="swiper-pagination"  slot="pagination"></div>
             
         </swiper>
       </div>
+       
   </div>
 </template>
 
@@ -20,7 +21,7 @@
 export default {
     name:"Gallary",
     props:{
-        images:{
+        imgs:{
             type:Array,
             default(){
                 return []

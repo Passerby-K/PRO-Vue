@@ -47,6 +47,7 @@ export default {
                 console.log(data)
                 this.sightName=data.sightName
                 this.bannerImg=data.bannerImg
+                console.log(this.bannerImg)
                 this.gallaryImgs=data.gallaryImgs
                 this.list=data.categoryList
 

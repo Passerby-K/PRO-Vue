@@ -8,12 +8,16 @@
             <p class="number"><span>${{this.gallaryImgs.length}}</span> </p>
         </div>
   </div>
-  <gallary :img="bannerImg" v-show="showGall" @close="handClose"></gallary>
+  <fade>
+        <gallary :imgs="gallaryImgs" v-show="showGall" @close="handClose"></gallary>
+  </fade>
 </div>
 </template>
 
 <script>
 import Gallary from "common/gallary/gallary"
+import Fade from "common/fade/fade"
+
 export default {
     name:"Banner",
     props:{
@@ -23,7 +27,8 @@ export default {
     },
     data () {
         return{
-            showGall:false
+            showGall:false,
+            // imgs:["//img1.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_600x330_8572a930.jpg"]
            
         }
     },
@@ -37,7 +42,8 @@ export default {
         }
     },
     components:{
-        Gallary
+        Gallary,
+        Fade
     }
 }
 
@@ -74,7 +80,5 @@ export default {
                 border-radius .2rem
                 font-size .24rem
                 background rgba(0,0,0,0.5)
-
-
 
 </style>
