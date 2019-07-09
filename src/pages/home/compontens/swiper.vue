@@ -47,7 +47,7 @@ export default {
         overflow hidden
         width 100%
         height 0
-        padding-bottom 26%
+        padding-bottom 50%
         background-color yellow
         img 
             width 100%

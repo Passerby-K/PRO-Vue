@@ -51,6 +51,7 @@ export default {
                 this.swiperLister=res.data.swiperList
                 this.iconList=res.data.iconList
                 this.reco=res.data.recommendList
+                // console.log(res.data.recommendList.imgUrl)
                 this.week=res.data.weekendList
 
             }

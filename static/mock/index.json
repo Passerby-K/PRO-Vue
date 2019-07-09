@@ -3,85 +3,119 @@
   "data": {
     "swiperList": [{
         "id": "0001",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1801/1a/94428c6dea109402.jpg_640x200_2cf590d8.jpg"
+        "imgUrl": "http://img.cits-sh.com/Files/201904152306468652.jpg"
       },{
         "id": "0002",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1802/42/7c92b9a381e46402.jpg_640x200_1cdce2a4.jpg"
+        "imgUrl": "http://img.cits-sh.com/Files/201903230304181357.jpg"
       },{
         "id": "0003",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1802/51/e78f936a5b404102.jpg_640x200_c14f0b3a.jpg"
+        "imgUrl": "http://img.cits-sh.com/Files/201904151805272392.jpg"
       },{
         "id": "0004",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1712/91/a275569091681d02.jpg_640x200_0519ccb9.jpg"
+        "imgUrl": "http://img.cits-sh.com/Files/201904251507188593.jpg"
       }],
     "iconList": [{
         "id": "0001",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png",
-        "desc": "景点门票"
+        "imgUrl": "http://file.cits-sh.com/mobile/images/ouzhou.png",
+        "desc": "欧洲游"
       }, {
         "id": "0002",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1711/df/86cbcfc533330d02.png",
-        "desc": "滑雪季"
+        "imgUrl": "http://file.cits-sh.com/mobile/images/%E6%BE%B3%E6%B4%B2.png",
+        "desc": "澳新游"
       }, {
         "id": "0003",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1710/a6/83f636bd75ae6302.png",
-        "desc": "泡温泉"
+        "imgUrl": "http://file.cits-sh.com/mobile/images/icon-nanmeizhou.png",
+        "desc": "南美洲"
       }, {
         "id": "0004",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/35/2640cab202c41b02.png",
-        "desc": "动植园"
+        "imgUrl": "http://file.cits-sh.com/mobile/images/icon-beimeizhou.png",
+        "desc": "北美洲"
       }, {
         "id": "0005",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/d0/e09575e66f4aa402.png",
-        "desc": "游乐园"
+        "imgUrl": "http://file.cits-sh.com/mobile/images/%E5%8D%97%E9%9D%9E.png",
+        "desc": "中东非"
       }, {
         "id": "0006",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/59/569d3c096e542502.png",
-        "desc": "必游榜单"
+        "imgUrl": "http://file.cits-sh.com/mobile/images/riben.png",
+        "desc": "日本游"
       }, {
         "id": "0007",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/17/4bd370f3eb1acd02.png",
-        "desc": "演出"
+        "imgUrl": "http://file.cits-sh.com/mobile/images/icon-dongnanya.png",
+        "desc": "东南亚"
       }, {
         "id": "0008",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/7f/b1ea3c8c7fb6db02.png",
-        "desc": "城市观光"
+        "imgUrl": "http://file.cits-sh.com/mobile/images/guoneiyou.png",
+        "desc": "国内游"
       }, {
         "id": "0009",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png",
-        "desc": "一日游"
-      }],
+        "imgUrl": "http://file.cits-sh.com/mobile/images/zhoubianyou.png",
+        "desc": "周边游"
+      }, {
+        "id": "0010",
+        "imgUrl": "http://file.cits-sh.com/mobile/images/qianzheng.png",
+        "desc": "办签证"
+      },{
+        "id": "0011",
+        "imgUrl": "https://pic5.40017.cn/02/001/5f/ab/rBLkCFqozNqAF4UUAAAFH-2jq70957.png",
+        "desc": "景点门票"
+      }, {
+        "id": "0012",
+        "imgUrl": "https://pic5.40017.cn/01/000/5f/a5/rBLkBVqozNqAGbVbAAADpuwJ0xY082.png",
+        "desc": "酒店住宿"
+      },{
+        "id": "0013",
+        "imgUrl": "https://pic5.40017.cn/02/001/5f/ab/rBLkCFqozNqAJqPYAAAFlYq1v7A413.png",
+        "desc": "机票"
+      },{
+        "id": "0014",
+        "imgUrl": "//pic5.40017.cn/01/000/5f/30/rBANC1qozNqAb3vRAAAD_Qg-dt4234.png",
+        "desc": "火车票"
+      }
+    ],
     "recommendList": [{
         "id": "0001",
-        "imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg",
-        "title": "故宫",
-        "desc": "东方宫殿建筑代表，世界宫殿建筑典范"
+        "imgUrl": "https://pic4.40017.cn/poi/2017/03/24/16/WikwXs_247x271_00.jpg",
+        "title": "到三亚，一定要睡你",
+        "desc": "秀丽的三亚，在海南的最南端。那里“一湾椰影三面海，水琼天碧处处花”，正是出游佳选之地。"
       }, {
         "id": "0002",
-        "imgUrl": "http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_140x140_abb362a7.jpg",
-        "title": "南山滑雪场",
-        "desc": "北京专业级滑雪圣地"
+        "imgUrl": "https://pic5.40017.cn/02/001/f9/d5/rBLkCVog632ATCJxAAHvnqy9fTI392_247x271_00.jpg",
+        "title": "冬游吉林必看攻略",
+        "desc": "如果你梦想北国风光的壮美，如果你听说过冬季的长白山有多美，如果你想看看晶莹剔透的雾凇岛雪景，那么，吉林值得一去。"
       }, {
         "id": "0003",
-        "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_140x140_ef235b1c.jpg",
-        "title": "天安门广场",
-        "desc": "我爱北京天安门，天安门上太阳升"
+        "imgUrl": "https://pic5.40017.cn/02/000/db/6c/rBANDFp3_9qARSjaAADFUVx0QeI653_247x271_00.jpg",
+        "title": "酒店洗护用品排行榜，最贵等于最用心？",
+        "desc": "如果你想要Bottega Veneta、Aēsop、Le Labo、Ferragamo、Ormonde Jayne 这等大牌洗浴用品，又不想体验免税店断货、专卖店挤破头，还能在哪里便能轻易地得到？"
       }, {
         "id": "0004",
-        "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/40/40b2b6c951b28fdd.water.jpg_140x140_1c863e5c.jpg",
-        "title": "水立方",
-        "desc": "中国的荣耀，阳光下的晶莹水滴"
+        "imgUrl": "https://pic5.40017.cn/01/001/64/dc/rBLkBVqqJ8GAb7gVAAFBJUv0j6s522_247x271_00.jpg",
+        "title": "巴厘岛SPA指南",
+        "desc": "巴厘岛以典型的海滨自然风光和独特的风土人情而闻名。这里蓝天碧海，水清沙白。但是在这里不搭配上一次SPA，那只能说你只体验过半个巴厘岛。"
       }, {
         "id": "0005",
-        "imgUrl": "http://img1.qunarzz.com/sight/p0/201308/23/b283071686e64dfec8d65eac.jpg_140x140_8c5a7c49.jpg",
-        "title": "温都水城养生馆",
-        "desc": "各种亚热带植物掩映其间仿佛置身热带雨林"
-      }],
+        "imgUrl": "https://pic3.40017.cn/poi/2016/03/07/18/s529rO_247x271_00.jpg",
+        "title": "教你三步玩转威海",
+        "desc": "依山傍海的地理位置使得威海海岸线绵长，由此形成了令人神往的海岛风情，除了大家熟知的刘公岛和成山头，威海还有哪些好玩的地方？到了威海吃什？有哪些性价比比较高的餐厅值得去？想为朋友带点伴手礼，有哪些好的购物点比较合适？那就跟着小编一起来解开这些问题吧。"
+      }
+      ,{
+        "id": "0006",
+        "imgUrl": "https://pic4.40017.cn/poi/2016/09/28/15/RMgkO0_247x271_00.jpg",
+        "title": "新西兰南北岛4晚7日游",
+        "desc": "当你把心灵交付给一段随心的旅程，用心去发现沿途的风光，与各种美好不期而遇，新西兰给你一种治愈系旅行。"
+      }
+      ,{
+        "id": "0007",
+        "imgUrl": "https://pic5.40017.cn/01/000/20/a6/rBANC1nwTsKAEtaVAADicPhikLE222_247x271_00.jpg",
+        "title": "全国温泉“约泡”种草名单",
+        "desc": "我大中华地大物博，几乎每个地方都有温泉，那么究竟哪些温泉才是好温泉呢？如果不看专业的水质指标，我们怎么选温泉？"
+      }
+    ],
     "weekendList": [{
         "id": "0001",
-        "imgUrl": "http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg",
-        "title": "北京温泉排行榜",
-        "desc": "细数北京温泉，温暖你的冬天"
+        "imgUrl": "https://pic4.40017.cn/poi/2016/11/03/15/Tc18nb_720x405_00.jpg",
+        "title": "在内蒙古过最纯粹的冬天",
+        "desc": "来呼伦贝尔参加冰雪那达慕"
       }, {
         "id": "0002",
         "imgUrl": "http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg",
@@ -89,19 +123,19 @@
         "desc": "来北京必去的景点非这些地方莫属"
       }, {
         "id": "0003",
-        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
-        "title": "寻找北京的皇城范儿",
-        "desc": "数百年的宫廷庙宇，至今依旧威严霸气"
+        "imgUrl": "https://pic4.40017.cn/poi/2016/08/23/20/ZryNft_720x405_00.jpg",
+        "title": "九寨沟民俗两日游",
+        "desc": "提起九寨沟，人们总是会说，那地方我知道，风景好着呢！"
       }, {
         "id": "0004",
-        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/ce/bc89bc2f0e33ea.jpg_r_640x214_3e408453.jpg",
-        "title": "学生最爱的博物馆",
-        "desc": "周末干嘛？北京很多博物馆已经免费开放啦"
+        "imgUrl": "https://pic5.40017.cn/01/001/69/95/rBANC1oJV5GANdgEAAEjboydLZY174_720x405_00.JPG",
+        "title": "隐匿在福建的最美8大海岛",
+        "desc": "除了鼓浪屿，福建还有这么多好玩的海岛，可以和小编一起看看哦~"
       }, {
         "id": "0005",
-        "imgUrl": "http://img1.qunarzz.com/sight/source/1505/b2/fde1bfcd057a52.jpg_r_640x214_bbf3fa44.jpg",
-        "title": "儿童剧场，孩子的乐园",
-        "desc": "带宝贝观看演出，近距离体验艺术的无穷魅力"
+        "imgUrl": "https://pic4.40017.cn/poi/2016/07/14/10/Zz3DnQ_720x405_00.jpg",
+        "title": "芽庄经典两日游",
+        "desc": "芽庄是越南最有名的潜水胜地，你可以参加一个四岛游、洗一回泥浆浴、吃一顿地道便宜的越南海鲜，在这里潇洒快乐的玩上俩天。"
       }]
   }
 }

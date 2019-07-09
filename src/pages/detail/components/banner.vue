@@ -55,7 +55,7 @@ export default {
         overflow hidden
         width 100%
         height 0
-        padding-bottom 55%
+        padding-bottom 50%
         .banner-img
             width 100%
         .banner-info

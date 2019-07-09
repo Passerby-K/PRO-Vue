@@ -1,9 +1,9 @@
 {
   "ret": true,
   "data": {
-    "sightName": "大连圣亚海洋世界(AAAA景区)",
-    "bannerImg": "http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_600x330_bf9c4904.jpg",
-    "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_800x800_70debc93.jpg", "http://img1.qunarzz.com/sight/p0/1709/76/7691528bc7d7ad3ca3.img.png_800x800_9ef05ee7.png"],
+    "sightName": "三亚湾哇艾鲁海岸别墅",
+    "bannerImg": "https://pic4.40017.cn/poi/2017/03/24/17/7Hqw82_630x320_00.jpg",
+    "gallaryImgs": ["https://pic4.40017.cn/poi/2017/03/24/19/TduYpS_630x320_00.jpg", "https://pic4.40017.cn/poi/2017/03/24/19/52iV2C_630x320_00.jpg","https://pic4.40017.cn/poi/2017/03/24/19/mDj086_630x320_00.jpg"],
     "categoryList": [{
         "title": "成人票",
         "children": [{
